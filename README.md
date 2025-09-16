@@ -1,5 +1,5 @@
 # LiveDrops – Flash-Sale & Follow Platform
-
+## Graph: https://excalidraw.com/#json=aWcDF9hTTYCZnCiKugbBm,5ty_pG5-I4RJ0QobCmzk9A
 ## Overview
 - LiveDrops is a flash-sale platform where creators can run limited-stock product drops.
 - Users can follow creators, browse products, receive near real-time notifications, and place orders.
