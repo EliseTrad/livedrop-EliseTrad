@@ -10,4 +10,5 @@
 | Content Moderation / Auto-flagging | Detect policy or compliance issues | User-generated content, specialized classifier | 2 | 600 | $0.003 | Escalate to human moderator | No |
 
 ## Why these two?
-We selected **Typeahead / Search Suggestions** and **Support Assistant (RAG + Order Status)** because they directly impact core business KPIs: Typeahead improves conversion by helping users find products faster, while Support Assistant reduces support contact rate and increases satisfaction. Integration risk is low since ShopLite already has the `order-status` API and FAQ markdown. Both can leverage embeddings, caching, and partial denormalization (Week 1 concepts) to achieve p95 latency targets while keeping cost manageable.
+I selected **Typeahead / Search Suggestions** and **Support Assistant (RAG + Order Status)** because they directly impact core business KPIs: Typeahead improves conversion by helping users find products faster, while Support Assistant reduces support contact rate and increases satisfaction. Integration risk is low since ShopLite already has the `order-status` API and FAQ markdown. Both can leverage embeddings, caching, and partial denormalization to achieve p95 latency targets while keeping cost manageable.
+
