@@ -22,6 +22,6 @@ week2/
 
 Refer to the files below for detailed deliverables:
 
-- [ai-capability-map.md](./doc/ai-capability-map.md) → AI capabilities and selection rationale
-- [touchpoints.md](./doc/touchpoints.md) → Full touchpoint specifications
-- [cost-model.md](./doc/cost-model.md) → Cost estimates and optimization strategies
+- [ai-capability-map.md](./ai-capability-map.md) → AI capabilities and selection rationale
+- [touchpoints.md](./touchpoints.md) → Full touchpoint specifications
+- [cost-model.md](./cost-model.md) → Cost estimates and optimization strategies
