@@ -9,7 +9,7 @@ Users need fast product search suggestions as they type. Without predictive sugg
 **Happy Path:**  
 1. User types a query in search bar.  
 2. Frontend sends partial query to API Gateway.  
-3. API checks cache for previous suggestions (Week 1: caching).  
+3. API checks cache for previous suggestions.  
 4. If cache miss, API calls Search Service.  
 5. Search Service uses embeddings + search-optimized DB to generate suggestions.  
 6. Suggestions returned to frontend within p95 latency ≤300ms.  
