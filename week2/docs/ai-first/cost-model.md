@@ -9,6 +9,7 @@
 
 ## Calculation
 Cost/action = (tokens_in/1000 * prompt_price) + (tokens_out/1000 * completion_price)
+
 Daily cost = Cost/action * Requests/day * (1 - cache_hit_rate)
 
 ## Results
