@@ -4,18 +4,18 @@ This folder contains my work for Week 2.
 
 ## Folder Structure
 
-week2/
+    week2/
 
-  docs/
+      docs/
   
-    ai-first/
+        ai-first/
     
-      ai-capability-map.md
+          ai-capability-map.md
       
-      touchpoints.md
+          touchpoints.md
       
-      cost-model.md
+          cost-model.md
 
-rfc.md  <- this file
+    rfc.md  <- this file
 
 - [ai-capability-map.md](./docs/ai-first/ai-capability-map.md) → AI capabilities and selection rationale
