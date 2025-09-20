@@ -13,8 +13,8 @@ Cost/action = (tokens_in/1000 * prompt_price) + (tokens_out/1000 * completion_pr
 Daily cost = Cost/action * Requests/day * (1 - cache_hit_rate)
 
 ## Results
-- Typeahead: Cost/action = $0.012, Daily = $180
-- Support Assistant: Cost/action = $0.065, Daily = $45
+- Typeahead: Cost/action = $0.0135, Daily = $202.5
+- Support Assistant: Cost/action = $0.0675, Daily = $47.25
 
 ## Cost lever if over budget
 - Reduce context tokens (shorter query length)  
