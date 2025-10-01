@@ -9,4 +9,5 @@ This repository contains my training work for Eurisko.
 - See details: [Week 2 folder](./docs/ai-first/)
 
 ## Week 3 — Prompt Engineering with RAG & Open Source LLMs
-- See details: [Week 3 folder](./docs/)
+- See details: [Week 3 folder](./docs/prompting)
+
