@@ -11,3 +11,5 @@ This repository contains my training work for Eurisko.
 ## Week 3 — Prompt Engineering with RAG & Open Source LLMs
 - See details: [Week 3 folder](./docs/prompting)
 
+## Week 4 — Frontend at Lightspeed — Assignment
+- See details: [Week 4 folder](./apps/README.md)

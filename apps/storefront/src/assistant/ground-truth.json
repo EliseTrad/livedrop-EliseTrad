@@ -1,0 +1,255 @@
+[
+  {
+    "id": "Q01",
+    "question": "How do I create a buyer account?",
+    "answer": "Visit the registration page, provide your name, email, and password, verify your email within 24 hours, and set up optional two-factor authentication for security.",
+    "keywords": [
+      "buyer account",
+      "registration",
+      "email verification",
+      "two-factor authentication",
+      "sign up"
+    ]
+  },
+  {
+    "id": "Q02",
+    "question": "How do I create a seller account?",
+    "answer": "Sign up via the seller portal, provide business information including tax ID and banking details, complete verification within 2–3 business days, then manage products via the dashboard.",
+    "keywords": [
+      "seller registration",
+      "business verification",
+      "tax ID",
+      "banking details",
+      "seller portal"
+    ]
+  },
+  {
+    "id": "Q03",
+    "question": "How does the shopping cart work?",
+    "answer": "Add items from different sellers, apply promotional codes, save products for later. Cart contents persist across sessions for logged-in users with real-time pricing updates.",
+    "keywords": [
+      "shopping cart",
+      "add items",
+      "promotional codes",
+      "save later",
+      "persistent cart"
+    ]
+  },
+  {
+    "id": "Q04",
+    "question": "What payment methods are supported?",
+    "answer": "We support credit/debit cards, PayPal, and mobile wallets. All payments are processed securely with encryption and tokenization for fraud prevention.",
+    "keywords": [
+      "payment methods",
+      "credit cards",
+      "PayPal",
+      "mobile wallets",
+      "secure payment",
+      "encryption"
+    ]
+  },
+  {
+    "id": "Q05",
+    "question": "How can I track my order?",
+    "answer": "Track orders via your dashboard, viewing stages like processing, shipped, out for delivery, and delivered, with real-time updates and email notifications.",
+    "keywords": [
+      "order tracking",
+      "dashboard",
+      "order status",
+      "real-time updates",
+      "notifications",
+      "delivery"
+    ]
+  },
+  {
+    "id": "Q06",
+    "question": "What is the return policy?",
+    "answer": "Returns are accepted within 30 days with a return authorization request. Items must be in original condition and refunds are issued to the original payment method.",
+    "keywords": [
+      "return policy",
+      "30 days",
+      "return authorization",
+      "original condition",
+      "refund",
+      "original payment"
+    ]
+  },
+  {
+    "id": "Q07",
+    "question": "How are product reviews moderated?",
+    "answer": "Reviews must be honest and comply with content guidelines. Moderation algorithms detect inappropriate content and helpful votes highlight useful reviews.",
+    "keywords": [
+      "product reviews",
+      "moderation",
+      "content guidelines",
+      "helpful votes",
+      "review quality"
+    ]
+  },
+  {
+    "id": "Q08",
+    "question": "How can sellers update inventory?",
+    "answer": "Sellers can add products individually or via bulk upload, update stock levels and SKUs, and receive low-stock alerts with AI-driven recommendations.",
+    "keywords": [
+      "inventory management",
+      "bulk upload",
+      "stock levels",
+      "SKU",
+      "low-stock alerts",
+      "seller tools"
+    ]
+  },
+  {
+    "id": "Q09",
+    "question": "What fees does the platform charge?",
+    "answer": "We charge commissions by product category with additional fees for promotions or premium placement. Payouts are scheduled weekly or bi-weekly.",
+    "keywords": [
+      "fees",
+      "commission",
+      "product category",
+      "promotions",
+      "premium placement",
+      "payout schedule"
+    ]
+  },
+  {
+    "id": "Q10",
+    "question": "What customer support channels are available?",
+    "answer": "Support is available via email, live chat, and phone with monitored SLAs. High-risk cases are escalated to specialized agents.",
+    "keywords": [
+      "customer support",
+      "email support",
+      "live chat",
+      "phone support",
+      "SLA",
+      "escalation"
+    ]
+  },
+  {
+    "id": "Q11",
+    "question": "What mobile app features are available?",
+    "answer": "Browse and search products, manage cart, checkout, receive push notifications, access offline browsing, and use AI chat assistants and recommendations.",
+    "keywords": [
+      "mobile app",
+      "browse",
+      "search",
+      "checkout",
+      "push notifications",
+      "offline browsing",
+      "AI chat"
+    ]
+  },
+  {
+    "id": "Q12",
+    "question": "How is API access secured?",
+    "answer": "Developer API access uses API keys, OAuth 2.0 authentication, and rate limits to ensure secure and controlled access to platform features.",
+    "keywords": [
+      "API security",
+      "API keys",
+      "OAuth",
+      "rate limits",
+      "developer access",
+      "authentication"
+    ]
+  },
+  {
+    "id": "Q13",
+    "question": "How is data privacy handled?",
+    "answer": "We comply with GDPR, use encryption for sensitive data, and provide privacy settings for users to control their information sharing preferences.",
+    "keywords": [
+      "data privacy",
+      "GDPR",
+      "encryption",
+      "privacy settings",
+      "data protection",
+      "user control"
+    ]
+  },
+  {
+    "id": "Q14",
+    "question": "How do promotional codes work?",
+    "answer": "Apply promo codes at checkout for real-time discounts. Some codes are stackable and can be combined with other offers for additional savings.",
+    "keywords": [
+      "promotional codes",
+      "promo codes",
+      "checkout",
+      "discounts",
+      "stackable offers",
+      "savings"
+    ]
+  },
+  {
+    "id": "Q15",
+    "question": "How are AI features integrated?",
+    "answer": "AI provides personalized suggestions, pricing optimization, and automated support with human oversight to ensure quality and accuracy.",
+    "keywords": [
+      "AI features",
+      "personalized suggestions",
+      "pricing optimization",
+      "automated support",
+      "human oversight"
+    ]
+  },
+  {
+    "id": "Q16",
+    "question": "What shipping options are available?",
+    "answer": "We offer standard, expedited, and overnight shipping options. Shipping costs and delivery times vary by location and item weight.",
+    "keywords": [
+      "shipping options",
+      "standard shipping",
+      "expedited",
+      "overnight",
+      "delivery times",
+      "shipping costs"
+    ]
+  },
+  {
+    "id": "Q17",
+    "question": "How do I change my account settings?",
+    "answer": "Access your profile dashboard to manage account settings, reset passwords, update contact information, and modify notification preferences.",
+    "keywords": [
+      "account settings",
+      "profile dashboard",
+      "password reset",
+      "contact information",
+      "notifications"
+    ]
+  },
+  {
+    "id": "Q18",
+    "question": "What happens if an item is out of stock?",
+    "answer": "Out of stock items show availability status. You can sign up for restock notifications or browse similar recommended products.",
+    "keywords": [
+      "out of stock",
+      "availability",
+      "restock notifications",
+      "similar products",
+      "recommendations"
+    ]
+  },
+  {
+    "id": "Q19",
+    "question": "How do I cancel an order?",
+    "answer": "Orders can be cancelled within 30 minutes of placement if not yet processed. Contact support for cancellations of processed orders.",
+    "keywords": [
+      "cancel order",
+      "30 minutes",
+      "order processing",
+      "contact support",
+      "cancellation policy"
+    ]
+  },
+  {
+    "id": "Q20",
+    "question": "How do I report a problem with a product?",
+    "answer": "Report product issues through your order history or contact customer support. Include order details and photos if applicable for faster resolution.",
+    "keywords": [
+      "report problem",
+      "product issues",
+      "order history",
+      "customer support",
+      "photos",
+      "resolution"
+    ]
+  }
+]

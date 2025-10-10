@@ -1,0 +1,23 @@
+// THIS FILE IS FOR DOCUMENTATION ONLY
+// The actual implementation uses YAML prompts in /docs/prompting/assistant-prompts.yml
+// and dynamic prompt formatting in the Jupyter notebook RAG system
+
+ACTUAL SYSTEM ARCHITECTURE:
+- RAG-based retrieval using FAISS + sentence-transformers
+- Llama 3.1-8B model for generation
+- Hybrid approach: Ground truth matching + Order API integration
+- Confidence scoring with fallback to human support
+- YAML-based prompt templates with dynamic context injection
+
+IMPLEMENTED FEATURES:
+1. Semantic search across 15 knowledge base documents
+2. Order status lookup with masked order IDs (...1234)
+3. Confidence thresholds (< 0.3 triggers fallback)
+4. Multi-document synthesis for complex queries
+5. Human-in-the-loop escalation for low confidence
+6. Comprehensive evaluation framework with 20+ test cases
+
+PROMPT TEMPLATES LOCATION:
+- Base retrieval: docs/prompting/assistant-prompts.yml
+- Ground truth data: apps/storefront/src/assistant/ground-truth.json
+- Engine logic: apps/storefront/src/assistant/engine.ts

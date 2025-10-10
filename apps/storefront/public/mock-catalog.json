@@ -1,0 +1,200 @@
+[
+  {
+    "id": "1",
+    "title": "Premium Wireless Headphones",
+    "price": 299.99,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+    "tags": ["electronics", "audio", "wireless"],
+    "stockQty": 15,
+    "description": "High-quality wireless headphones with noise cancellation and 30-hour battery life."
+  },
+  {
+    "id": "2",
+    "title": "Organic Cotton T-Shirt",
+    "price": 29.99,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop",
+    "tags": ["clothing", "organic", "cotton"],
+    "stockQty": 50,
+    "description": "Comfortable 100% organic cotton t-shirt available in multiple colors."
+  },
+  {
+    "id": "3",
+    "title": "Smart Fitness Watch",
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
+    "tags": ["electronics", "fitness", "smart"],
+    "stockQty": 8,
+    "description": "Advanced fitness tracking with heart rate monitor and GPS capabilities."
+  },
+  {
+    "id": "4",
+    "title": "Bamboo Coffee Mug",
+    "price": 19.99,
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop",
+    "tags": ["kitchen", "eco-friendly", "bamboo"],
+    "stockQty": 30,
+    "description": "Sustainable bamboo fiber coffee mug with heat-resistant design."
+  },
+  {
+    "id": "5",
+    "title": "Leather Messenger Bag",
+    "price": 149.99,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop",
+    "tags": ["accessories", "leather", "bags"],
+    "stockQty": 12,
+    "description": "Handcrafted genuine leather messenger bag perfect for work or travel."
+  },
+  {
+    "id": "6",
+    "title": "Yoga Mat Premium",
+    "price": 79.99,
+    "image": "https://images.unsplash.com/photo-1506629905877-c19c6ac12ba6?w=400&h=300&fit=crop",
+    "tags": ["fitness", "yoga", "eco-friendly"],
+    "stockQty": 25,
+    "description": "Non-slip premium yoga mat made from natural rubber with alignment guides."
+  },
+  {
+    "id": "7",
+    "title": "Wireless Phone Charger",
+    "price": 39.99,
+    "image": "https://images.unsplash.com/photo-1585558143083-bd52aa5e967e?w=400&h=300&fit=crop",
+    "tags": ["electronics", "charging", "wireless"],
+    "stockQty": 40,
+    "description": "Fast wireless charging pad compatible with all Qi-enabled devices."
+  },
+  {
+    "id": "8",
+    "title": "Artisan Coffee Beans",
+    "price": 24.99,
+    "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop",
+    "tags": ["food", "coffee", "organic"],
+    "stockQty": 60,
+    "description": "Single-origin artisan coffee beans, medium roast with chocolate notes."
+  },
+  {
+    "id": "9",
+    "title": "Bluetooth Speaker",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
+    "tags": ["electronics", "audio", "bluetooth"],
+    "stockQty": 18,
+    "description": "Portable waterproof Bluetooth speaker with 20-hour battery life."
+  },
+  {
+    "id": "10",
+    "title": "Plant-Based Protein Powder",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=400&h=300&fit=crop",
+    "tags": ["fitness", "protein", "plant-based"],
+    "stockQty": 35,
+    "description": "Organic plant-based protein powder with 25g protein per serving."
+  },
+  {
+    "id": "11",
+    "title": "Stainless Steel Water Bottle",
+    "price": 34.99,
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=300&fit=crop",
+    "tags": ["kitchen", "eco-friendly", "stainless-steel"],
+    "stockQty": 45,
+    "description": "Double-wall insulated water bottle keeps drinks cold for 24 hours."
+  },
+  {
+    "id": "12",
+    "title": "Memory Foam Pillow",
+    "price": 59.99,
+    "image": "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&h=300&fit=crop",
+    "tags": ["home", "bedding", "memory-foam"],
+    "stockQty": 22,
+    "description": "Ergonomic memory foam pillow with cooling gel layer for better sleep."
+  },
+  {
+    "id": "13",
+    "title": "LED Desk Lamp",
+    "price": 69.99,
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+    "tags": ["electronics", "lighting", "desk"],
+    "stockQty": 28,
+    "description": "Adjustable LED desk lamp with touch control and USB charging port."
+  },
+  {
+    "id": "14",
+    "title": "Essential Oil Diffuser",
+    "price": 44.99,
+    "image": "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?w=400&h=300&fit=crop",
+    "tags": ["home", "aromatherapy", "wellness"],
+    "stockQty": 33,
+    "description": "Ultrasonic essential oil diffuser with 7 LED color options."
+  },
+  {
+    "id": "15",
+    "title": "Resistance Band Set",
+    "price": 29.99,
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+    "tags": ["fitness", "resistance", "home-gym"],
+    "stockQty": 42,
+    "description": "Complete resistance band set with door anchor and exercise guide."
+  },
+  {
+    "id": "16",
+    "title": "Ceramic Plant Pot",
+    "price": 19.99,
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=300&fit=crop",
+    "tags": ["home", "plants", "ceramic"],
+    "stockQty": 55,
+    "description": "Handmade ceramic plant pot with drainage holes and saucer."
+  },
+  {
+    "id": "17",
+    "title": "Blue Light Glasses",
+    "price": 39.99,
+    "image": "https://images.unsplash.com/photo-1473167623877-6cfee48db21e?w=400&h=300&fit=crop",
+    "tags": ["accessories", "glasses", "blue-light"],
+    "stockQty": 38,
+    "description": "Computer glasses with blue light filtering to reduce eye strain."
+  },
+  {
+    "id": "18",
+    "title": "Portable Power Bank",
+    "price": 24.99,
+    "image": "https://images.unsplash.com/photo-1609592019438-69b81e30c712?w=400&h=300&fit=crop",
+    "tags": ["electronics", "charging", "portable"],
+    "stockQty": 47,
+    "description": "10,000mAh portable power bank with fast charging capabilities."
+  },
+  {
+    "id": "19",
+    "title": "Scented Candle Set",
+    "price": 34.99,
+    "image": "https://images.unsplash.com/photo-1602874801006-e17ccc6ee6b5?w=400&h=300&fit=crop",
+    "tags": ["home", "candles", "aromatherapy"],
+    "stockQty": 29,
+    "description": "Set of 3 soy wax candles with lavender, vanilla, and eucalyptus scents."
+  },
+  {
+    "id": "20",
+    "title": "Mechanical Keyboard",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83Add3?w=400&h=300&fit=crop",
+    "tags": ["electronics", "keyboard", "gaming"],
+    "stockQty": 16,
+    "description": "RGB mechanical keyboard with tactile switches and aluminum frame."
+  },
+  {
+    "id": "21",
+    "title": "Herbal Tea Collection",
+    "price": 27.99,
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop",
+    "tags": ["food", "tea", "herbal"],
+    "stockQty": 41,
+    "description": "Premium herbal tea collection with 12 different organic blends."
+  },
+  {
+    "id": "22",
+    "title": "Wireless Mouse",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=300&fit=crop",
+    "tags": ["electronics", "mouse", "wireless"],
+    "stockQty": 52,
+    "description": "Ergonomic wireless mouse with precision tracking and long battery life."
+  }
+]
