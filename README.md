@@ -12,4 +12,5 @@ This repository contains my training work for Eurisko.
 - See details: [Week 3 folder](./docs/prompting)
 
 ## Week 4 — Frontend at Lightspeed — Assignment
-- See details: [Week 4 folder](./apps/README.md)
+
+- See details: [Week 4 folder](./apps/storefront/README.md)
