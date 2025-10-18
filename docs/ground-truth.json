@@ -1,0 +1,369 @@
+{
+  "knowledge_base": {
+    "version": "1.0.0",
+    "last_updated": "2025-10-12",
+    "documents": [
+      {
+        "id": "Policy3.1",
+        "title": "Return Policy",
+        "category": "returns",
+        "keywords": [
+          "return",
+          "refund",
+          "exchange",
+          "defective",
+          "damaged",
+          "30 days",
+          "receipt"
+        ],
+        "content": "LiveDrop offers a 30-day return policy for all items. Items must be in original condition with tags attached. To initiate a return, contact customer support with your order number. Refunds are processed within 5-7 business days after we receive your return. Return shipping is free for defective or damaged items, but customers pay return shipping for size/color exchanges or change of mind returns.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "return_window": "30-day return policy",
+          "condition_requirement": "Items must be in original condition with tags attached",
+          "refund_timeline": "Refunds are processed within 5-7 business days",
+          "shipping_policy": "Return shipping is free for defective items, customer pays for exchanges"
+        }
+      },
+      {
+        "id": "Shipping2.1",
+        "title": "Shipping Information",
+        "category": "shipping",
+        "keywords": [
+          "shipping",
+          "delivery",
+          "tracking",
+          "expedited",
+          "standard",
+          "free shipping",
+          "business days"
+        ],
+        "content": "Standard shipping takes 3-5 business days and is free on orders over $50. Expedited shipping (1-2 business days) is available for $9.99. Orders placed before 2 PM EST ship the same day. Tracking information is provided via email once your order ships. We ship Monday-Friday, excluding holidays. International shipping is available to select countries with delivery times of 7-14 business days.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "standard_delivery": "Standard shipping takes 3-5 business days",
+          "free_shipping_threshold": "Free shipping on orders over $50",
+          "expedited_option": "Expedited shipping (1-2 business days) for $9.99",
+          "cutoff_time": "Orders placed before 2 PM EST ship same day",
+          "international": "International shipping available, 7-14 business days"
+        }
+      },
+      {
+        "id": "Warranty4.1",
+        "title": "Product Warranty",
+        "category": "warranty",
+        "keywords": [
+          "warranty",
+          "guarantee",
+          "defective",
+          "malfunction",
+          "repair",
+          "replacement",
+          "1 year"
+        ],
+        "content": "All LiveDrop products come with a 1-year limited warranty against manufacturing defects. This warranty covers material and workmanship under normal use. Warranty does not cover damage from misuse, accidents, or normal wear and tear. To claim warranty service, contact customer support with your order number and description of the issue. Warranty repairs or replacements are processed within 10-14 business days.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "warranty_period": "1-year limited warranty",
+          "coverage": "Covers manufacturing defects, material and workmanship",
+          "exclusions": "Does not cover misuse, accidents, or normal wear",
+          "claim_process": "Contact support with order number and issue description",
+          "processing_time": "Warranty service processed within 10-14 business days"
+        }
+      },
+      {
+        "id": "payment-policy-001",
+        "title": "Payment Methods",
+        "category": "payment",
+        "keywords": [
+          "payment",
+          "credit card",
+          "debit",
+          "paypal",
+          "apple pay",
+          "google pay",
+          "security",
+          "billing"
+        ],
+        "content": "We accept all major credit cards (Visa, MasterCard, American Express, Discover), debit cards, PayPal, Apple Pay, and Google Pay. All transactions are secured with 256-bit SSL encryption. Your billing address must match your payment method. We do not store credit card information on our servers. For security, we may request additional verification for large orders or new customers.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "accepted_methods": "Credit cards, debit cards, PayPal, Apple Pay, Google Pay",
+          "security": "Secured with 256-bit SSL encryption",
+          "billing_verification": "Billing address must match payment method",
+          "data_protection": "We do not store credit card information",
+          "verification": "Additional verification may be required for large orders"
+        }
+      },
+      {
+        "id": "size-guide-001",
+        "title": "Size Guide and Fitting",
+        "category": "sizing",
+        "keywords": [
+          "size",
+          "fit",
+          "measurement",
+          "chart",
+          "exchange",
+          "too small",
+          "too big",
+          "sizing guide"
+        ],
+        "content": "Use our detailed size charts for accurate fitting. Measurements are in inches and centimeters. If you're between sizes, we recommend sizing up. Size exchanges are free within 30 days with original tags. For custom or personalized items, all sales are final. Contact customer support if you need help determining your size - we're happy to provide personalized recommendations based on your measurements.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "size_charts": "Detailed size charts available in inches and centimeters",
+          "sizing_advice": "If between sizes, we recommend sizing up",
+          "exchange_policy": "Size exchanges are free within 30 days",
+          "custom_items": "Custom or personalized items - all sales final",
+          "support_help": "Customer support provides personalized size recommendations"
+        }
+      },
+      {
+        "id": "privacy-policy-001",
+        "title": "Privacy and Data Protection",
+        "category": "privacy",
+        "keywords": [
+          "privacy",
+          "data",
+          "personal information",
+          "email",
+          "cookies",
+          "marketing",
+          "unsubscribe"
+        ],
+        "content": "We protect your personal information and only use it to process orders and improve your shopping experience. We never sell your data to third parties. Email addresses are used for order confirmations, shipping updates, and optional marketing communications. You can unsubscribe from marketing emails at any time. We use cookies to enhance site functionality and analyze usage patterns. Your data is encrypted and stored securely.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "data_protection": "Personal information protected and never sold to third parties",
+          "email_usage": "Email used for order confirmations, shipping updates, marketing",
+          "unsubscribe": "Can unsubscribe from marketing emails anytime",
+          "cookies": "Cookies used for site functionality and usage analysis",
+          "security": "Data is encrypted and stored securely"
+        }
+      },
+      {
+        "id": "customer-service-001",
+        "title": "Customer Service Hours",
+        "category": "support",
+        "keywords": [
+          "customer service",
+          "support",
+          "hours",
+          "contact",
+          "phone",
+          "email",
+          "chat",
+          "help"
+        ],
+        "content": "Customer support is available Monday-Friday 9 AM to 6 PM EST, and Saturday 10 AM to 4 PM EST. We're closed on Sundays and major holidays. Contact us via live chat (fastest response), email at support@livedrop.com, or phone at 1-800-LIVEDROP. Average response time for emails is 2-4 hours during business hours. For urgent order issues, use live chat or phone support.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "weekday_hours": "Monday-Friday 9 AM to 6 PM EST",
+          "weekend_hours": "Saturday 10 AM to 4 PM EST, closed Sundays",
+          "contact_methods": "Live chat, email (support@livedrop.com), phone (1-800-LIVEDROP)",
+          "response_time": "Email response within 2-4 hours during business hours",
+          "urgent_issues": "Use live chat or phone for urgent order issues"
+        }
+      },
+      {
+        "id": "discount-policy-001",
+        "title": "Discounts and Promotions",
+        "category": "promotions",
+        "keywords": [
+          "discount",
+          "coupon",
+          "promo code",
+          "sale",
+          "promotion",
+          "first time",
+          "student",
+          "military"
+        ],
+        "content": "New customers receive 15% off their first order with code WELCOME15. We offer student discounts (10% with valid ID) and military discounts (15% with verification). Promo codes cannot be combined with other offers. Sale items are final sale unless defective. Seasonal promotions are announced via email and social media. Promo codes must be entered at checkout and cannot be applied to past orders.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "new_customer": "15% off first order with code WELCOME15",
+          "student_discount": "10% student discount with valid ID",
+          "military_discount": "15% military discount with verification",
+          "combination_policy": "Promo codes cannot be combined with other offers",
+          "sale_items": "Sale items are final sale unless defective",
+          "application": "Promo codes entered at checkout, cannot apply to past orders"
+        }
+      },
+      {
+        "id": "gift-policy-001",
+        "title": "Gift Cards and Gift Wrapping",
+        "category": "gifts",
+        "keywords": [
+          "gift card",
+          "gift wrap",
+          "present",
+          "birthday",
+          "holiday",
+          "recipient",
+          "message"
+        ],
+        "content": "Gift cards are available in denominations of $25, $50, $100, and $200. They never expire and can be used for any purchase. Gift wrapping is available for $4.99 per item and includes elegant packaging with a personalized message card. Digital gift cards are delivered instantly via email. Physical gift cards ship free and arrive in 3-5 business days. Gift receipts are automatically included with gift-wrapped items.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "denominations": "Gift cards available in $25, $50, $100, $200",
+          "expiration": "Gift cards never expire",
+          "gift_wrapping": "Gift wrapping available for $4.99 per item",
+          "digital_delivery": "Digital gift cards delivered instantly via email",
+          "physical_shipping": "Physical gift cards ship free in 3-5 days",
+          "gift_receipts": "Gift receipts automatically included with wrapped items"
+        }
+      },
+      {
+        "id": "international-policy-001",
+        "title": "International Shipping",
+        "category": "international",
+        "keywords": [
+          "international",
+          "global",
+          "customs",
+          "duties",
+          "taxes",
+          "import",
+          "canada",
+          "europe",
+          "australia"
+        ],
+        "content": "We ship to over 50 countries worldwide. International shipping costs vary by destination and are calculated at checkout. Delivery times are 7-14 business days. Customers are responsible for customs duties, taxes, and import fees. We provide detailed customs declarations to minimize delays. Some restrictions apply - prohibited items include batteries, liquids, and perishables. Contact support for specific country restrictions.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "coverage": "Ship to over 50 countries worldwide",
+          "cost_calculation": "Shipping costs calculated at checkout",
+          "delivery_time": "7-14 business days for international delivery",
+          "customs_responsibility": "Customers responsible for duties, taxes, import fees",
+          "customs_support": "Detailed customs declarations provided",
+          "restrictions": "Prohibited items include batteries, liquids, perishables"
+        }
+      },
+      {
+        "id": "loyalty-program-001",
+        "title": "LiveDrop Rewards Program",
+        "category": "loyalty",
+        "keywords": [
+          "rewards",
+          "points",
+          "loyalty",
+          "program",
+          "earn",
+          "redeem",
+          "tier",
+          "benefits",
+          "VIP"
+        ],
+        "content": "Join LiveDrop Rewards to earn 1 point per dollar spent. Every 100 points equals $5 in rewards. Member tiers include Silver (0-999 points), Gold (1000-2499 points), and Platinum (2500+ points). Benefits increase with tier level: early sale access, exclusive products, free expedited shipping, and birthday rewards. Points expire after 12 months of account inactivity. Sign up is free and immediate.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "earning_rate": "Earn 1 point per dollar spent",
+          "redemption_value": "100 points equals $5 in rewards",
+          "tier_structure": "Silver (0-999), Gold (1000-2499), Platinum (2500+)",
+          "tier_benefits": "Early access, exclusive products, free expedited shipping, birthday rewards",
+          "expiration": "Points expire after 12 months of inactivity",
+          "membership": "Free and immediate sign up"
+        }
+      },
+      {
+        "id": "backorder-policy-001",
+        "title": "Backorders and Out of Stock",
+        "category": "inventory",
+        "keywords": [
+          "backorder",
+          "out of stock",
+          "restock",
+          "availability",
+          "notify",
+          "wait list",
+          "pre-order"
+        ],
+        "content": "When items are temporarily out of stock, you can join our notification list to be alerted when they're restocked. Most items are restocked within 2-4 weeks. For popular items, we offer pre-orders with expected ship dates. Backorders are charged when the order ships, not when placed. You can cancel backorders anytime before shipping. We provide regular updates on restocking timelines via email.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "notification_system": "Join notification list for restock alerts",
+          "restock_timeline": "Most items restocked within 2-4 weeks",
+          "pre_orders": "Pre-orders available for popular items with ship dates",
+          "payment_timing": "Backorders charged when shipped, not when ordered",
+          "cancellation": "Can cancel backorders anytime before shipping",
+          "updates": "Regular restock timeline updates via email"
+        }
+      },
+      {
+        "id": "damage-claims-001",
+        "title": "Damaged Package Claims",
+        "category": "shipping_issues",
+        "keywords": [
+          "damaged",
+          "broken",
+          "package",
+          "shipping damage",
+          "carrier",
+          "claim",
+          "replacement",
+          "photo"
+        ],
+        "content": "If your package arrives damaged, do not discard the packaging - take photos immediately. Contact customer support within 48 hours with photos of the damaged item and packaging. We'll file a claim with the carrier and send a replacement immediately. For high-value items, we may arrange for carrier inspection. Damaged items don't need to be returned unless specifically requested. We work quickly to resolve damage claims within 24-48 hours.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "photo_requirement": "Take photos of damaged item and packaging immediately",
+          "reporting_window": "Contact support within 48 hours",
+          "claim_process": "We file carrier claims and send immediate replacement",
+          "inspection": "Carrier inspection may be arranged for high-value items",
+          "return_policy": "Damaged items don't need return unless requested",
+          "resolution_time": "Damage claims resolved within 24-48 hours"
+        }
+      },
+      {
+        "id": "price-matching-001",
+        "title": "Price Matching Policy",
+        "category": "pricing",
+        "keywords": [
+          "price match",
+          "competitor",
+          "lower price",
+          "price difference",
+          "match",
+          "beat price"
+        ],
+        "content": "We offer price matching on identical items from authorized retailers. The competitor's price must be currently available and in stock. Price matching applies to the item price only, not shipping or taxes. Submit a price match request before purchasing with a link to the competitor's listing. We reserve the right to verify the competitor's price and authenticity. Price matching is not available on clearance items, limited-time offers, or membership-only prices.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "eligibility": "Price matching on identical items from authorized retailers",
+          "availability_requirement": "Competitor price must be currently available and in stock",
+          "scope": "Applies to item price only, not shipping or taxes",
+          "process": "Submit request before purchasing with competitor link",
+          "verification": "We reserve right to verify price and authenticity",
+          "exclusions": "Not available on clearance, limited-time, or membership prices"
+        }
+      },
+      {
+        "id": "account-security-001",
+        "title": "Account Security",
+        "category": "security",
+        "keywords": [
+          "account",
+          "password",
+          "security",
+          "login",
+          "reset",
+          "unauthorized",
+          "hacked",
+          "protection"
+        ],
+        "content": "Protect your account with a strong password containing letters, numbers, and symbols. Enable two-factor authentication for added security. Never share your login credentials. If you suspect unauthorized access, change your password immediately and contact customer support. We'll never ask for your password via email or phone. Log out of shared computers and monitor your account for unusual activity. Report suspicious emails claiming to be from LiveDrop.",
+        "effective_date": "2025-01-01",
+        "citations": {
+          "password_requirements": "Strong password with letters, numbers, symbols",
+          "two_factor": "Two-factor authentication available for added security",
+          "credential_protection": "Never share login credentials",
+          "breach_response": "Change password immediately if unauthorized access suspected",
+          "communication_policy": "We never ask for passwords via email or phone",
+          "security_practices": "Log out of shared computers, monitor account activity"
+        }
+      }
+    ]
+  }
+}

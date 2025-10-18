@@ -2,10 +2,13 @@
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/atoms/Button'
 import { useCartStore, useSupportStore } from '@/lib/store'
+import { useState } from 'react'
+import { UserLogin } from '@/components/UserLogin'
 
 export function Header() {
   const getItemCount = useCartStore(state => state.getItemCount)
   const openSupport = useSupportStore(state => state.open)
+  const [showLogin, setShowLogin] = useState(false)
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
@@ -43,10 +46,32 @@ export function Header() {
                   </span>
                 )}
               </Button>
+                <Link to="/login">
+                  <Button
+                    variant="ghost"
+                    className="hidden sm:flex"
+                  >
+                    Sign In
+                  </Button>
+                </Link>
             </Link>
           </div>
         </div>
       </div>
     </header>
   )
+    {showLogin && (
+      <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+        <div className="bg-white rounded-lg shadow-lg p-6 relative w-full max-w-md">
+          <button
+            className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+            onClick={() => setShowLogin(false)}
+            aria-label="Close"
+          >
+            &times;
+          </button>
+          <UserLogin />
+        </div>
+      </div>
+    )}
 }

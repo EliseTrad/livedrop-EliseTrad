@@ -1,31 +1,35 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Button } from '@/components/atoms/Button'
-import { LoadingSpinner } from '@/components/atoms/LoadingSpinner'
-import { useCartStore } from '@/lib/store'
-import { placeOrder } from '@/lib/api'
-import { formatCurrency } from '@/lib/format'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button } from '@/components/atoms/Button';
+import { LoadingSpinner } from '@/components/atoms/LoadingSpinner';
+import { useCartStore } from '@/lib/store';
+import { placeOrder } from '@/lib/api';
+import { useUser } from '@/lib/user-context';
+import { formatCurrency } from '@/lib/format';
 
 export function CheckoutPage() {
-  const navigate = useNavigate()
-  const { items, getTotal, clearCart } = useCartStore()
-  const [loading, setLoading] = useState(false)
+  const navigate = useNavigate();
+  const { items, getTotal, clearCart } = useCartStore();
+  const [loading, setLoading] = useState(false);
+  const { customer } = useUser();
 
   const handlePlaceOrder = async () => {
-    if (items.length === 0) return
-
-    setLoading(true)
-    try {
-      const { orderId } = await placeOrder(items)
-      clearCart()
-      navigate(`/order/${orderId}`)
-    } catch (error) {
-      console.error('Failed to place order:', error)
-      alert('Failed to place order. Please try again.')
-    } finally {
-      setLoading(false)
+    if (items.length === 0 || !customer) {
+      alert('You must be logged in to place an order.');
+      return;
     }
-  }
+    setLoading(true);
+    try {
+      const { orderId } = await placeOrder(items, customer._id);
+      clearCart();
+      navigate(`/order/${orderId}`);
+    } catch (error) {
+      console.error('Failed to place order:', error);
+      alert('Failed to place order. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   if (items.length === 0) {
     return (
@@ -36,22 +40,20 @@ export function CheckoutPage() {
           Continue Shopping
         </Button>
       </div>
-    )
+    );
   }
 
-  const subtotal = getTotal()
-  const tax = subtotal * 0.08
-  const total = subtotal + tax
+  const subtotal = getTotal();
+  const tax = subtotal * 0.08;
+  const total = subtotal + tax;
 
   return (
     <div className="max-w-2xl mx-auto space-y-8">
       <h1 className="text-2xl font-bold text-gray-900">Checkout</h1>
-
       <div className="bg-white p-6 rounded-lg border border-gray-200">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">Order Summary</h2>
-        
         <div className="space-y-3">
-          {items.map(item => (
+          {items.map((item: any) => (
             <div key={item.id} className="flex justify-between items-center">
               <div className="flex items-center space-x-3">
                 <img
@@ -70,7 +72,6 @@ export function CheckoutPage() {
             </div>
           ))}
         </div>
-
         <div className="border-t border-gray-200 mt-6 pt-6 space-y-3">
           <div className="flex justify-between">
             <span className="text-gray-600">Subtotal</span>
@@ -92,13 +93,11 @@ export function CheckoutPage() {
           </div>
         </div>
       </div>
-
       <div className="bg-white p-6 rounded-lg border border-gray-200">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">Payment Information</h2>
         <p className="text-gray-600 mb-4">
           This is a demo checkout. No actual payment will be processed.
         </p>
-        
         <Button
           size="lg"
           onClick={handlePlaceOrder}
@@ -116,5 +115,5 @@ export function CheckoutPage() {
         </Button>
       </div>
     </div>
-  )
+  );
 }

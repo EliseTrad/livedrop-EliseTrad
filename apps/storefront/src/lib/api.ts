@@ -1,11 +1,13 @@
 export interface Product {
   id: string
+  name: string
   title: string
   price: number
   image: string
   tags: string[]
   stockQty: number
   description?: string
+  category?: string
 }
 
 export interface CartItem {
@@ -18,87 +20,187 @@ export interface CartItem {
 
 export interface Order {
   orderId: string
-  status: 'Placed' | 'Packed' | 'Shipped' | 'Delivered'
+  status: 'PENDING' | 'PROCESSING' | 'SHIPPED' | 'DELIVERED'
   items: CartItem[]
   total: number
   createdAt: string
+  orderDate?: string
   estimatedDelivery?: string
   carrier?: string
+  customerEmail?: string
 }
 
-// Mock API functions
-export async function listProducts(): Promise<Product[]> {
-  const response = await fetch('/mock-catalog.json')
-  if (!response.ok) throw new Error('Failed to fetch products')
+export interface User {
+  email: string
+  name?: string
+}
+
+// API Configuration
+const API_BASE_URL = import.meta.env?.VITE_API_URL || 'http://localhost:5000'
+
+// API helper function
+async function apiCall(endpoint: string, options: RequestInit = {}) {
+  const url = `${API_BASE_URL}${endpoint}`
+  const response = await fetch(url, {
+    headers: {
+      'Content-Type': 'application/json',
+      ...options.headers,
+    },
+    ...options,
+  })
+  
+  if (!response.ok) {
+    const error = await response.text()
+    throw new Error(`API Error: ${response.status} - ${error}`)
+  }
+  
   return response.json()
 }
 
-export async function getProduct(id: string): Promise<Product | null> {
-  const products = await listProducts()
-  return products.find(p => p.id === id) || null
+// Real API functions
+export async function listProducts(): Promise<Product[]> {
+  const data = await apiCall('/api/products?limit=30')
+  return data.products.map((product: any) => ({
+    ...product,
+    title: product.name, // Map name to title for compatibility
+    image: product.imageUrl, // Map imageUrl to image for compatibility
+    tags: product.tags || [],
+    stockQty: product.stock || 0,
+  }))
 }
 
-export async function placeOrder(cartItems: CartItem[]): Promise<{ orderId: string }> {
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 1000))
-  
-  const orderId = generateOrderId()
-  const order: Order = {
-    orderId,
-    status: 'Placed',
-    items: cartItems,
-    total: cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0),
-    createdAt: new Date().toISOString(),
+export async function getProduct(id: string): Promise<Product | null> {
+  try {
+    const product = await apiCall(`/api/products/${id}`)
+    return {
+      ...product,
+      title: product.name,
+      image: product.imageUrl, // Map imageUrl to image for compatibility
+      tags: product.tags || [],
+      stockQty: product.stock || 0,
+    }
+  } catch (error) {
+    console.error('Failed to fetch product:', error)
+    return null
   }
-  
-  // Store in localStorage for demo
-  const orders = getStoredOrders()
-  orders[orderId] = order
-  localStorage.setItem('orders', JSON.stringify(orders))
-  
-  return { orderId }
+}
+
+export async function searchProducts(query: string): Promise<Product[]> {
+  const data = await apiCall(`/api/products?search=${encodeURIComponent(query)}`)
+  return data.products.map((product: any) => ({
+    ...product,
+    title: product.name,
+    image: product.imageUrl, // Map imageUrl to image for compatibility
+    tags: product.tags || [],
+    stockQty: product.stock || 0,
+  }))
+}
+
+// Place order now requires customerId
+export async function placeOrder(cartItems: CartItem[], customerId: string): Promise<{ orderId: string }> {
+  const orderData = {
+    customerId,
+    items: cartItems.map(item => ({
+      productId: item.id,
+      productName: item.title,
+      quantity: item.quantity,
+      price: item.price,
+    })),
+    total: cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+  };
+  const data = await apiCall('/api/orders', {
+    method: 'POST',
+    body: JSON.stringify(orderData),
+  });
+  return { orderId: data.data.orderId };
 }
 
 export async function getOrderStatus(orderId: string): Promise<Order | null> {
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 500))
-  
-  const orders = getStoredOrders()
-  const order = orders[orderId]
-  
-  if (!order) return null
-  
-  // Simulate order progress
-  const now = Date.now()
-  const created = new Date(order.createdAt).getTime()
-  const elapsed = now - created
-  
-  if (elapsed > 5 * 60 * 1000) { // 5 minutes
-    order.status = 'Delivered'
-  } else if (elapsed > 3 * 60 * 1000) { // 3 minutes
-    order.status = 'Shipped'
-    order.carrier = 'FedEx'
-    order.estimatedDelivery = new Date(now + 24 * 60 * 60 * 1000).toISOString()
-  } else if (elapsed > 1 * 60 * 1000) { // 1 minute
-    order.status = 'Packed'
-  }
-  
-  // Update stored order
-  orders[orderId] = order
-  localStorage.setItem('orders', JSON.stringify(orders))
-  
-  return order
-}
-
-// Helper functions
-function generateOrderId(): string {
-  return Math.random().toString(36).substring(2, 12).toUpperCase()
-}
-
-function getStoredOrders(): Record<string, Order> {
   try {
-    return JSON.parse(localStorage.getItem('orders') || '{}')
-  } catch {
-    return {}
+    const data = await apiCall(`/api/orders/${orderId}`)
+    return {
+      ...data.data,
+      items: data.data.items.map((item: any) => ({
+        id: item.productId,
+        title: item.productName,
+        quantity: item.quantity,
+        price: item.price,
+        image: '', // Will be populated from product data if needed
+      })),
+    }
+  } catch (error) {
+    console.error('Failed to fetch order:', error)
+    return null
   }
+}
+
+export async function getCustomerOrders(email: string): Promise<Order[]> {
+  try {
+    const data = await apiCall(`/api/customers/${encodeURIComponent(email)}/orders`)
+    return data.data.map((order: any) => ({
+      ...order,
+      items: order.items.map((item: any) => ({
+        id: item.productId,
+        title: item.productName,
+        quantity: item.quantity,
+        price: item.price,
+        image: '', // Will be populated from product data if needed
+      })),
+    }))
+  } catch (error) {
+    console.error('Failed to fetch customer orders:', error)
+    return []
+  }
+}
+
+export async function chatWithAssistant(message: string, sessionId?: string): Promise<{
+  response: string
+  sessionId: string
+  intent: string
+  confidence: number
+}> {
+  try {
+    const data = await apiCall('/api/assistant/chat', {
+      method: 'POST',
+      body: JSON.stringify({ message, sessionId }),
+    })
+    return data.data
+  } catch (error) {
+    console.error('Failed to chat with assistant:', error)
+    return {
+      response: "I'm sorry, I'm having trouble connecting right now. Please try again later.",
+      sessionId: sessionId || 'session-' + Date.now(),
+      intent: 'error',
+      confidence: 1.0,
+    }
+  }
+}
+
+// Server-Sent Events for real-time order updates
+export function streamOrderUpdates(orderId: string, onUpdate: (order: Order) => void): () => void {
+  const eventSource = new EventSource(`${API_BASE_URL}/api/stream/order/${orderId}`)
+  
+  eventSource.onmessage = (event) => {
+    try {
+      const orderData = JSON.parse(event.data)
+      onUpdate({
+        ...orderData,
+        items: orderData.items.map((item: any) => ({
+          id: item.productId,
+          title: item.productName,
+          quantity: item.quantity,
+          price: item.price,
+          image: '', // Will be populated from product data if needed
+        })),
+      })
+    } catch (error) {
+      console.error('Failed to parse order update:', error)
+    }
+  }
+  
+  eventSource.onerror = (error) => {
+    console.error('Order stream error:', error)
+  }
+  
+  return () => eventSource.close()
 }
