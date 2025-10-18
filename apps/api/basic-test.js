@@ -1,16 +1,16 @@
 // Very basic MongoDB connection test
 const mongoose = require('mongoose');
 
-const uri =
-  'mongodb+srv://elise_user:gLJqtzQwUMlKf7Df@euriskocluster0.rekgzby.mongodb.net/?retryWrites=true&w=majority&appName=EuriskoCluster0';
+require('dotenv').config();
+const uri = process.env.MONGODB_URI;
 
 async function basicTest() {
   console.log('🔬 Basic connection test...');
-  console.log('URI:', uri.replace(/:[^:@]*@/, ':***@')); // Hide password
+  console.log('URI:', uri ? uri.replace(/:[^:@]*@/, ':***@') : 'undefined'); // Hide password
 
   try {
     await mongoose.connect(uri, {
-      dbName: 'week5_ecommerce',
+      dbName: process.env.DB_NAME || 'week5_ecommerce',
       serverSelectionTimeoutMS: 10000,
     });
 
